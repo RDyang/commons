@@ -1,0 +1,17 @@
+日志系统
+
+LogFactory
+	创建一个默认输出位置的logger
+	创建一个自定义输出位置的logger
+	
+ConfigCreation
+	BASE_DIR(user.dir)
+	BASE_FILE(core)
+	Properties props
+	static{
+		props = ...
+	}
+	configure4Fullpath()
+	configure4Filename()
+	configureProperties()
+	
