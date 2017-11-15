@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="goodsService">com.rdyang.mall.manager.service.impl.GoodsServiceImpl</entry>
+	<entry key="stockService">com.rdyang.mall.manager.service.impl.StockServiceImpl</entry>
+	<entry key="menuService">com.rdyang.mall.manager.service.impl.MenuServiceImpl</entry>
+</properties>

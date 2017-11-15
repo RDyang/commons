@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-10-14 23:29:31 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.rdyang.mall.manager.entity.Menu" table="MALL_MANAGER_MENU">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="parentId" type="java.lang.Integer">
+            <column name="PARENT_ID" />
+        </property>
+        <property name="text" type="java.lang.String">
+            <column name="TEXT" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="URL" />
+        </property>
+    </class>
+</hibernate-mapping>

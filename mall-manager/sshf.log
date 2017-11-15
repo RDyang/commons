@@ -1,0 +1,688 @@
+[INFO][2017-11-14 22:41:45,558][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+  [INFO][2017-11-14 22:41:45,706][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Nov 14 22:41:45 CST 2017]; root of context hierarchy
+  [INFO][2017-11-14 22:41:45,769][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-service.xml]
+  [INFO][2017-11-14 22:41:46,034][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-trans.xml]
+  [INFO][2017-11-14 22:41:46,225][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+  [INFO][2017-11-14 22:41:46,497][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+  [INFO][2017-11-14 22:41:46,511][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [ERROR][2017-11-14 22:41:46,775][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+  [INFO][2017-11-14 22:41:46,936][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+  [INFO][2017-11-14 22:41:47,543][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+  [INFO][2017-11-14 22:41:47,553][org.hibernate.Version]HHH000412: Hibernate Core {4.3.5.Final}
+  [INFO][2017-11-14 22:41:47,556][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+  [INFO][2017-11-14 22:41:47,559][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+  [INFO][2017-11-14 22:41:47,592][org.hibernate.cfg.Configuration]HHH000044: Configuring from URL: file:/E:/mall/mall-manager/target/classes/hibernate/hibernate.cfg.xml
+  [INFO][2017-11-14 22:41:47,660][org.hibernate.cfg.Configuration]HHH000041: Configured SessionFactory: null
+  [WARN][2017-11-14 22:41:47,680][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [WARN][2017-11-14 22:41:47,730][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [WARN][2017-11-14 22:41:47,751][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [INFO][2017-11-14 22:41:48,485][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  [INFO][2017-11-14 22:41:48,621][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+  [INFO][2017-11-14 22:41:48,633][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+  [INFO][2017-11-14 22:41:49,566][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+  [INFO][2017-11-14 22:41:49,567][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+  [INFO][2017-11-14 22:41:49,574][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+  [INFO][2017-11-14 22:41:49,695][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_goods
+  [INFO][2017-11-14 22:41:49,696][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [price, name, id]
+  [INFO][2017-11-14 22:41:49,696][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 22:41:49,696][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 22:41:49,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_menu
+  [INFO][2017-11-14 22:41:49,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [parent_id, id, text, url]
+  [INFO][2017-11-14 22:41:49,730][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 22:41:49,730][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 22:41:49,778][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_stock
+  [INFO][2017-11-14 22:41:49,779][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [amount, name, id]
+  [INFO][2017-11-14 22:41:49,779][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 22:41:49,779][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 22:41:49,780][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+  [INFO][2017-11-14 22:41:49,891][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2017-11-14 22:41:46",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:333337493, ConnectTime:"2017-11-14 22:41:48", UseCount:2, LastActiveTime:"2017-11-14 22:41:49"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+  [INFO][2017-11-14 22:41:50,012][com.rdyang.springmvc.base.SpringContextHolder]setApplicationContext and init xmlUrl
+  [INFO][2017-11-14 22:41:50,020][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4461 ms
+  [INFO][2017-11-14 22:41:50,096][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springMVC': initialization started
+  [INFO][2017-11-14 22:41:50,104][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 22:41:50 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 22:41:50,106][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc.xml]
+  [INFO][2017-11-14 22:41:50,487][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [INFO][2017-11-14 22:41:50,829][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/queryData],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.rdyang.hibernate.util.Pagination<?> com.rdyang.mall.manager.controller.DataController.queryData(java.lang.String)
+  [INFO][2017-11-14 22:41:50,830][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/goods/showGoods],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.GoodsController.show(com.rdyang.mall.manager.entity.Goods)
+  [INFO][2017-11-14 22:41:50,831][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/stock/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 22:41:50,832][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/menu/showMenu],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 22:41:50,833][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/stock/showStock],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 22:41:51,449][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 22:41:50 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 22:41:51,529][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 22:41:50 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 22:41:51,759][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+  [INFO][2017-11-14 22:41:51,763][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+  [INFO][2017-11-14 22:41:51,766][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+  [INFO][2017-11-14 22:41:51,770][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/jsp/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+  [INFO][2017-11-14 22:41:51,806][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springMVC': initialization completed in 1710 ms
+  [WARN][2017-11-14 22:42:30,125][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'springMVC'
+  [INFO][2017-11-14 22:42:32,648][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:42:32,649][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 22:42:33,571][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:42:33,571][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 22:42:33,571][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [WARN][2017-11-14 22:42:33,822][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 59.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+  [INFO][2017-11-14 22:42:40,046][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:42:40,047][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.GoodsController.show(com.rdyang.mall.manager.entity.Goods)
+  [INFO][2017-11-14 22:42:40,047][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 22:42:40,057][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 22:42:40,088][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=1, curCount=1, pageSize=5, pageIndex=1, pageCount=1, items=[com.rdyang.mall.manager.entity.Goods@1fa5c327]]
+  [INFO][2017-11-14 22:42:42,665][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:42:42,665][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 22:42:42,665][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 22:42:42,666][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 22:42:42,667][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 22:42:42,681][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@7eb5ca78, com.rdyang.mall.manager.entity.Stock@7743b2a5, com.rdyang.mall.manager.entity.Stock@10f46a26, com.rdyang.mall.manager.entity.Stock@c45bafa, com.rdyang.mall.manager.entity.Stock@5cf34700]]
+  [INFO][2017-11-14 22:56:30,051][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:56:30,058][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 22:56:30,058][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 22:56:30,070][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 22:56:30,073][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 22:56:30,124][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@5454fa0d, com.rdyang.mall.manager.entity.Stock@5166bafe, com.rdyang.mall.manager.entity.Stock@6f52ecc, com.rdyang.mall.manager.entity.Stock@18fae27e, com.rdyang.mall.manager.entity.Stock@6b8df7fe]]
+  [INFO][2017-11-14 22:58:08,804][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:58:08,804][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 22:58:08,903][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:58:08,904][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 22:58:08,904][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 22:58:10,232][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:58:10,232][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 22:58:10,232][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 22:58:10,233][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 22:58:10,233][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 22:58:10,245][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@53ab925, com.rdyang.mall.manager.entity.Stock@5ca4f8c4, com.rdyang.mall.manager.entity.Stock@2fc4e0cb, com.rdyang.mall.manager.entity.Stock@7fe79787, com.rdyang.mall.manager.entity.Stock@4dd0de0e]]
+  [INFO][2017-11-14 22:59:07,393][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:59:07,393][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 22:59:07,443][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:59:07,444][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 22:59:07,444][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 22:59:08,775][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 22:59:08,775][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 22:59:08,775][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 22:59:08,776][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 22:59:08,776][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 22:59:08,786][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@478907d4, com.rdyang.mall.manager.entity.Stock@6213be78, com.rdyang.mall.manager.entity.Stock@266b76ec, com.rdyang.mall.manager.entity.Stock@6efd7138, com.rdyang.mall.manager.entity.Stock@61456c94]]
+  [INFO][2017-11-14 23:08:56,333][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:08:56,333][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:08:56,333][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:08:56,334][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:08:56,334][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:08:56,345][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@65a30510, com.rdyang.mall.manager.entity.Stock@17557360, com.rdyang.mall.manager.entity.Stock@ba3207b, com.rdyang.mall.manager.entity.Stock@22e1c60a, com.rdyang.mall.manager.entity.Stock@5f97ccc3]]
+  [INFO][2017-11-14 23:09:05,514][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:09:05,514][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:09:05,515][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:09:05,515][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:09:05,515][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:09:05,526][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@302f2c4a, com.rdyang.mall.manager.entity.Stock@269bf821, com.rdyang.mall.manager.entity.Stock@74aa8e07, com.rdyang.mall.manager.entity.Stock@6342e660, com.rdyang.mall.manager.entity.Stock@2a46db3e]]
+  [INFO][2017-11-14 23:10:08,659][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:10:08,659][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:10:08,777][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:10:08,777][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:10:08,777][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:10:10,452][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:10:10,452][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:10:10,453][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:10:10,454][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:10:10,454][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:10:10,462][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@5c2644ec, com.rdyang.mall.manager.entity.Stock@47a3465d, com.rdyang.mall.manager.entity.Stock@7f4e812a, com.rdyang.mall.manager.entity.Stock@55ca2842, com.rdyang.mall.manager.entity.Stock@3ba50733]]
+  [INFO][2017-11-14 23:10:27,288][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:10:27,288][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:10:27,340][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:10:27,341][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:10:27,341][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:10:28,821][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:10:28,821][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:10:28,821][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:10:28,822][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:10:28,822][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:10:28,830][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@138b5e70, com.rdyang.mall.manager.entity.Stock@5c576367, com.rdyang.mall.manager.entity.Stock@74eef7ba, com.rdyang.mall.manager.entity.Stock@e7e07a8, com.rdyang.mall.manager.entity.Stock@47cfb0c9]]
+  [INFO][2017-11-14 23:10:44,100][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:10:44,100][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:10:44,101][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:10:44,101][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = null
+  [INFO][2017-11-14 23:10:44,104][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:10:44,104][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=10
+  [INFO][2017-11-14 23:10:44,112][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=10, pageSize=10, pageIndex=1, pageCount=6, items=[com.rdyang.mall.manager.entity.Stock@222eb9a0, com.rdyang.mall.manager.entity.Stock@1c5d1260, com.rdyang.mall.manager.entity.Stock@5a59c81a, com.rdyang.mall.manager.entity.Stock@60fbad41, com.rdyang.mall.manager.entity.Stock@374feb47, com.rdyang.mall.manager.entity.Stock@437521dc, com.rdyang.mall.manager.entity.Stock@57f828b0, com.rdyang.mall.manager.entity.Stock@6a5406ab, com.rdyang.mall.manager.entity.Stock@2289dd75, com.rdyang.mall.manager.entity.Stock@48186339]]
+  [INFO][2017-11-14 23:11:49,812][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:11:49,812][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:11:49,813][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:11:49,813][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:11:49,813][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=10
+  [INFO][2017-11-14 23:11:49,821][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=10, pageSize=10, pageIndex=1, pageCount=6, items=[com.rdyang.mall.manager.entity.Stock@125627eb, com.rdyang.mall.manager.entity.Stock@3e9595b0, com.rdyang.mall.manager.entity.Stock@339a719, com.rdyang.mall.manager.entity.Stock@62a6eea7, com.rdyang.mall.manager.entity.Stock@41ece467, com.rdyang.mall.manager.entity.Stock@5346d1ff, com.rdyang.mall.manager.entity.Stock@1d89b5e1, com.rdyang.mall.manager.entity.Stock@488fa321, com.rdyang.mall.manager.entity.Stock@6ee6b98b, com.rdyang.mall.manager.entity.Stock@b4a4481]]
+  [INFO][2017-11-14 23:12:09,114][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:09,115][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:12:09,287][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:09,287][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:12:09,287][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:12:10,438][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:10,439][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:12:10,439][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:12:10,439][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:12:10,439][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=10
+  [INFO][2017-11-14 23:12:10,448][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=10, pageSize=10, pageIndex=1, pageCount=6, items=[com.rdyang.mall.manager.entity.Stock@74092866, com.rdyang.mall.manager.entity.Stock@7a92174e, com.rdyang.mall.manager.entity.Stock@74693d59, com.rdyang.mall.manager.entity.Stock@7b153207, com.rdyang.mall.manager.entity.Stock@46626f1b, com.rdyang.mall.manager.entity.Stock@2ca028fe, com.rdyang.mall.manager.entity.Stock@119e4bc6, com.rdyang.mall.manager.entity.Stock@43c9c6f8, com.rdyang.mall.manager.entity.Stock@1686732d, com.rdyang.mall.manager.entity.Stock@3bcc5edb]]
+  [INFO][2017-11-14 23:12:26,055][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:26,056][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:12:26,115][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:26,115][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:12:26,115][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:12:27,451][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:27,451][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:12:27,451][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:12:27,452][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:12:27,452][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=10
+  [INFO][2017-11-14 23:12:27,460][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=10, pageSize=10, pageIndex=1, pageCount=6, items=[com.rdyang.mall.manager.entity.Stock@3203bdda, com.rdyang.mall.manager.entity.Stock@492ca5f3, com.rdyang.mall.manager.entity.Stock@239933, com.rdyang.mall.manager.entity.Stock@7c4e527d, com.rdyang.mall.manager.entity.Stock@538ccd43, com.rdyang.mall.manager.entity.Stock@7f23e9fc, com.rdyang.mall.manager.entity.Stock@63550d2a, com.rdyang.mall.manager.entity.Stock@6d067687, com.rdyang.mall.manager.entity.Stock@585548b1, com.rdyang.mall.manager.entity.Stock@3859364e]]
+  [INFO][2017-11-14 23:12:53,449][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:53,450][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:12:53,502][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:53,502][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:12:53,502][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:12:54,645][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:12:54,645][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:12:54,645][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:12:54,646][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:12:54,646][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=10
+  [INFO][2017-11-14 23:12:54,657][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=10, pageSize=10, pageIndex=1, pageCount=6, items=[com.rdyang.mall.manager.entity.Stock@347617d3, com.rdyang.mall.manager.entity.Stock@b691a32, com.rdyang.mall.manager.entity.Stock@49379aa6, com.rdyang.mall.manager.entity.Stock@604e58d6, com.rdyang.mall.manager.entity.Stock@64021383, com.rdyang.mall.manager.entity.Stock@27f93dbb, com.rdyang.mall.manager.entity.Stock@526e6148, com.rdyang.mall.manager.entity.Stock@40f41b3b, com.rdyang.mall.manager.entity.Stock@349e96ad, com.rdyang.mall.manager.entity.Stock@5ae46160]]
+  [INFO][2017-11-14 23:13:24,620][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:13:24,621][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:13:24,621][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:13:24,621][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:13:24,621][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=10
+  [INFO][2017-11-14 23:13:24,629][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=10, pageSize=10, pageIndex=1, pageCount=6, items=[com.rdyang.mall.manager.entity.Stock@4fd7a82a, com.rdyang.mall.manager.entity.Stock@1d1dc59, com.rdyang.mall.manager.entity.Stock@4803171a, com.rdyang.mall.manager.entity.Stock@500cff7, com.rdyang.mall.manager.entity.Stock@7764a185, com.rdyang.mall.manager.entity.Stock@78d89824, com.rdyang.mall.manager.entity.Stock@28b3ebe2, com.rdyang.mall.manager.entity.Stock@2bcff674, com.rdyang.mall.manager.entity.Stock@79750201, com.rdyang.mall.manager.entity.Stock@45d0acb3]]
+  [INFO][2017-11-14 23:14:16,472][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:14:16,473][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:14:16,522][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:14:16,522][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:14:16,522][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:14:18,052][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:14:18,052][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:14:18,052][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:14:18,053][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:14:18,053][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=10
+  [INFO][2017-11-14 23:14:18,061][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=10, pageSize=10, pageIndex=1, pageCount=6, items=[com.rdyang.mall.manager.entity.Stock@29b5b61c, com.rdyang.mall.manager.entity.Stock@5018bc9f, com.rdyang.mall.manager.entity.Stock@4266fd33, com.rdyang.mall.manager.entity.Stock@77971aa8, com.rdyang.mall.manager.entity.Stock@73165710, com.rdyang.mall.manager.entity.Stock@66ffe1a9, com.rdyang.mall.manager.entity.Stock@13850720, com.rdyang.mall.manager.entity.Stock@5c880da2, com.rdyang.mall.manager.entity.Stock@1de76ff4, com.rdyang.mall.manager.entity.Stock@48c3748]]
+  [INFO][2017-11-14 23:14:57,251][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:14:57,251][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:14:57,251][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:14:57,253][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:14:57,254][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=10
+  [INFO][2017-11-14 23:14:57,262][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=10, pageSize=10, pageIndex=1, pageCount=6, items=[com.rdyang.mall.manager.entity.Stock@6df11ebd, com.rdyang.mall.manager.entity.Stock@3653be7, com.rdyang.mall.manager.entity.Stock@68205a70, com.rdyang.mall.manager.entity.Stock@24f6abfd, com.rdyang.mall.manager.entity.Stock@41175d28, com.rdyang.mall.manager.entity.Stock@6b07fcee, com.rdyang.mall.manager.entity.Stock@19ed824, com.rdyang.mall.manager.entity.Stock@10a632a9, com.rdyang.mall.manager.entity.Stock@6b23c388, com.rdyang.mall.manager.entity.Stock@3f97b28e]]
+  [INFO][2017-11-14 23:15:04,728][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:15:04,729][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:15:04,729][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:15:04,729][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = null
+  [INFO][2017-11-14 23:15:04,730][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:15:04,731][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=20
+  [INFO][2017-11-14 23:15:04,741][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=20, pageSize=20, pageIndex=1, pageCount=3, items=[com.rdyang.mall.manager.entity.Stock@605c9d08, com.rdyang.mall.manager.entity.Stock@55b3a432, com.rdyang.mall.manager.entity.Stock@3ef21a5, com.rdyang.mall.manager.entity.Stock@3643610a, com.rdyang.mall.manager.entity.Stock@32731e17, com.rdyang.mall.manager.entity.Stock@7aa9be5f, com.rdyang.mall.manager.entity.Stock@315aa6, com.rdyang.mall.manager.entity.Stock@2dd7209b, com.rdyang.mall.manager.entity.Stock@7fe1090, com.rdyang.mall.manager.entity.Stock@30920d76, com.rdyang.mall.manager.entity.Stock@3afc85a8, com.rdyang.mall.manager.entity.Stock@2e3bb994, com.rdyang.mall.manager.entity.Stock@59b64653, com.rdyang.mall.manager.entity.Stock@79ef09ae, com.rdyang.mall.manager.entity.Stock@276002fe, com.rdyang.mall.manager.entity.Stock@54e4f89f, com.rdyang.mall.manager.entity.Stock@3f8bb88e, com.rdyang.mall.manager.entity.Stock@3ea864a8, com.rdyang.mall.manager.entity.Stock@1978f671, com.rdyang.mall.manager.entity.Stock@6aabd5c1]]
+  [INFO][2017-11-14 23:15:17,440][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:15:17,441][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:15:17,441][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:15:17,442][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = null
+  [INFO][2017-11-14 23:15:17,444][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:15:17,445][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=50
+  [INFO][2017-11-14 23:15:17,460][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=50, pageSize=50, pageIndex=1, pageCount=2, items=[com.rdyang.mall.manager.entity.Stock@3bb702a3, com.rdyang.mall.manager.entity.Stock@1926a7d1, com.rdyang.mall.manager.entity.Stock@197562cb, com.rdyang.mall.manager.entity.Stock@13f9beba, com.rdyang.mall.manager.entity.Stock@10d8147c, com.rdyang.mall.manager.entity.Stock@3cec2199, com.rdyang.mall.manager.entity.Stock@e3d7ff5, com.rdyang.mall.manager.entity.Stock@506f0ce6, com.rdyang.mall.manager.entity.Stock@c49963, com.rdyang.mall.manager.entity.Stock@5d79900b, com.rdyang.mall.manager.entity.Stock@38de8e86, com.rdyang.mall.manager.entity.Stock@107ebd47, com.rdyang.mall.manager.entity.Stock@345521aa, com.rdyang.mall.manager.entity.Stock@253d06e3, com.rdyang.mall.manager.entity.Stock@695b167c, com.rdyang.mall.manager.entity.Stock@caa1a95, com.rdyang.mall.manager.entity.Stock@11ef22db, com.rdyang.mall.manager.entity.Stock@5c28241b, com.rdyang.mall.manager.entity.Stock@6df13114, com.rdyang.mall.manager.entity.Stock@3153f08d, com.rdyang.mall.manager.entity.Stock@5942e586, com.rdyang.mall.manager.entity.Stock@44571a49, com.rdyang.mall.manager.entity.Stock@20cafa46, com.rdyang.mall.manager.entity.Stock@e33a14a, com.rdyang.mall.manager.entity.Stock@40130bdf, com.rdyang.mall.manager.entity.Stock@3c6ac4c6, com.rdyang.mall.manager.entity.Stock@4b8511c7, com.rdyang.mall.manager.entity.Stock@58afc00c, com.rdyang.mall.manager.entity.Stock@ba6535, com.rdyang.mall.manager.entity.Stock@6a9ccd10, com.rdyang.mall.manager.entity.Stock@974f2ad, com.rdyang.mall.manager.entity.Stock@2f7dfc2f, com.rdyang.mall.manager.entity.Stock@7cbdb738, com.rdyang.mall.manager.entity.Stock@704511f2, com.rdyang.mall.manager.entity.Stock@5e0a74cd, com.rdyang.mall.manager.entity.Stock@1ed667a7, com.rdyang.mall.manager.entity.Stock@fc31732, com.rdyang.mall.manager.entity.Stock@57d15db9, com.rdyang.mall.manager.entity.Stock@5a70f792, com.rdyang.mall.manager.entity.Stock@77365824, com.rdyang.mall.manager.entity.Stock@605bab77, com.rdyang.mall.manager.entity.Stock@3d3a0e50, com.rdyang.mall.manager.entity.Stock@60aba202, com.rdyang.mall.manager.entity.Stock@2599214b, com.rdyang.mall.manager.entity.Stock@1824269c, com.rdyang.mall.manager.entity.Stock@7581e346, com.rdyang.mall.manager.entity.Stock@4807f446, com.rdyang.mall.manager.entity.Stock@24f80774, com.rdyang.mall.manager.entity.Stock@1dd1c5b1, com.rdyang.mall.manager.entity.Stock@67b09e9e]]
+  [INFO][2017-11-14 23:15:23,613][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:15:23,614][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:15:23,614][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:15:23,614][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = null
+  [INFO][2017-11-14 23:15:23,615][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:15:23,615][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:15:23,625][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@452f9a1, com.rdyang.mall.manager.entity.Stock@4b22c22e, com.rdyang.mall.manager.entity.Stock@391dba08, com.rdyang.mall.manager.entity.Stock@4ce1f854, com.rdyang.mall.manager.entity.Stock@5f6d8f98]]
+  [INFO][2017-11-14 23:31:39,260][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:31:39,261][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:31:39,369][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:31:39,370][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:31:39,370][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:32:18,691][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:32:18,692][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:32:18,693][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:32:18,695][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:32:18,696][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:32:18,717][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@45538c3f, com.rdyang.mall.manager.entity.Stock@448660d5, com.rdyang.mall.manager.entity.Stock@5e7fd338, com.rdyang.mall.manager.entity.Stock@6479cfa8, com.rdyang.mall.manager.entity.Stock@3d12956c]]
+  [INFO][2017-11-14 23:32:50,107][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:32:50,107][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:32:50,107][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:32:50,107][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:32:50,108][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:32:50,115][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@315e7de5, com.rdyang.mall.manager.entity.Stock@5144c7b, com.rdyang.mall.manager.entity.Stock@393f28de, com.rdyang.mall.manager.entity.Stock@71dbf461, com.rdyang.mall.manager.entity.Stock@33280eea]]
+  [INFO][2017-11-14 23:32:51,304][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:32:51,304][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:32:51,304][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:32:51,305][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:32:51,305][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:32:51,312][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@3f5c7f6e, com.rdyang.mall.manager.entity.Stock@48f5f081, com.rdyang.mall.manager.entity.Stock@140b2896, com.rdyang.mall.manager.entity.Stock@6f2d7aeb, com.rdyang.mall.manager.entity.Stock@3356cf6f]]
+  [INFO][2017-11-14 23:32:51,519][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:32:51,519][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:32:51,519][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:32:51,520][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:32:51,520][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:32:51,526][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@5fecdc42, com.rdyang.mall.manager.entity.Stock@d52a98c, com.rdyang.mall.manager.entity.Stock@2f5141a8, com.rdyang.mall.manager.entity.Stock@26d5ee7e, com.rdyang.mall.manager.entity.Stock@1f62282a]]
+  [INFO][2017-11-14 23:32:51,735][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:32:51,736][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:32:51,736][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:32:51,737][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:32:51,737][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:32:51,744][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@4c6ee8ef, com.rdyang.mall.manager.entity.Stock@9d5c5d7, com.rdyang.mall.manager.entity.Stock@40dd1f8e, com.rdyang.mall.manager.entity.Stock@5e6d0417, com.rdyang.mall.manager.entity.Stock@65ffa6a5]]
+  [INFO][2017-11-14 23:32:51,952][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:32:51,952][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:32:51,952][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:32:51,953][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:32:51,953][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:32:51,959][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@361d80e7, com.rdyang.mall.manager.entity.Stock@532810ce, com.rdyang.mall.manager.entity.Stock@5d1ee134, com.rdyang.mall.manager.entity.Stock@1cac4232, com.rdyang.mall.manager.entity.Stock@46ece3f8]]
+  [INFO][2017-11-14 23:34:07,464][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:34:07,465][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:34:07,574][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:34:07,574][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:34:07,574][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:34:11,681][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:34:11,681][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:34:11,681][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:34:11,682][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:34:11,682][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:34:11,691][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@7a1b6c34, com.rdyang.mall.manager.entity.Stock@6581f038, com.rdyang.mall.manager.entity.Stock@5084b281, com.rdyang.mall.manager.entity.Stock@3ae09afe, com.rdyang.mall.manager.entity.Stock@1bbb3b5a]]
+  [INFO][2017-11-14 23:34:46,273][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:34:46,273][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:34:46,273][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:34:46,274][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:34:46,274][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:34:46,282][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@1e5f7522, com.rdyang.mall.manager.entity.Stock@1dda9a6e, com.rdyang.mall.manager.entity.Stock@4f993246, com.rdyang.mall.manager.entity.Stock@6a250be3, com.rdyang.mall.manager.entity.Stock@fb695e0]]
+  [INFO][2017-11-14 23:34:52,746][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:34:52,747][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:34:52,747][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:34:52,747][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = 1
+  [INFO][2017-11-14 23:34:52,750][com.rdyang.springmvc.base.BaseController]{name=华为}
+  [INFO][2017-11-14 23:34:52,750][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={name=华为} pageIndex=1 pageSize=5
+  [WARN][2017-11-14 23:34:52,758][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 66.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+  [INFO][2017-11-14 23:34:52,783][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=59, curCount=1, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@595be1b4]]
+  [INFO][2017-11-14 23:36:20,744][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:36:20,744][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:36:20,744][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:36:20,745][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:36:20,745][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:36:20,753][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@5a253198, com.rdyang.mall.manager.entity.Stock@2d2b85d1, com.rdyang.mall.manager.entity.Stock@1f91d951, com.rdyang.mall.manager.entity.Stock@49932db8, com.rdyang.mall.manager.entity.Stock@3a497ce3]]
+  [INFO][2017-11-14 23:36:26,914][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:36:26,914][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:36:26,914][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:36:26,914][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = 1
+  [INFO][2017-11-14 23:36:26,916][com.rdyang.springmvc.base.BaseController]{name=华为}
+  [INFO][2017-11-14 23:36:26,917][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={name=华为} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:36:26,923][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=1, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@58370551]]
+  [INFO][2017-11-14 23:36:33,992][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:36:33,992][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:36:33,992][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:36:33,993][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = 1
+  [INFO][2017-11-14 23:36:33,993][com.rdyang.springmvc.base.BaseController]{name=华为P9}
+  [INFO][2017-11-14 23:36:33,994][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={name=华为P9} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:36:34,002][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=1, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@1f607e78]]
+  [INFO][2017-11-14 23:38:46,782][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+  [INFO][2017-11-14 23:38:47,043][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Nov 14 23:38:47 CST 2017]; root of context hierarchy
+  [INFO][2017-11-14 23:38:47,110][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-service.xml]
+  [INFO][2017-11-14 23:38:47,499][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-trans.xml]
+  [INFO][2017-11-14 23:38:47,616][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+  [INFO][2017-11-14 23:38:47,911][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+  [INFO][2017-11-14 23:38:47,932][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [ERROR][2017-11-14 23:38:48,249][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+  [INFO][2017-11-14 23:38:48,337][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+  [INFO][2017-11-14 23:38:49,011][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+  [INFO][2017-11-14 23:38:49,025][org.hibernate.Version]HHH000412: Hibernate Core {4.3.5.Final}
+  [INFO][2017-11-14 23:38:49,029][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+  [INFO][2017-11-14 23:38:49,032][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+  [INFO][2017-11-14 23:38:49,070][org.hibernate.cfg.Configuration]HHH000044: Configuring from URL: file:/E:/mall/mall-manager/target/classes/hibernate/hibernate.cfg.xml
+  [INFO][2017-11-14 23:38:49,143][org.hibernate.cfg.Configuration]HHH000041: Configured SessionFactory: null
+  [WARN][2017-11-14 23:38:49,152][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [WARN][2017-11-14 23:38:49,201][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [WARN][2017-11-14 23:38:49,232][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [INFO][2017-11-14 23:38:50,021][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  [INFO][2017-11-14 23:38:50,173][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+  [INFO][2017-11-14 23:38:50,182][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+  [INFO][2017-11-14 23:38:51,253][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+  [INFO][2017-11-14 23:38:51,253][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+  [INFO][2017-11-14 23:38:51,261][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+  [INFO][2017-11-14 23:38:51,306][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_goods
+  [INFO][2017-11-14 23:38:51,306][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [price, name, id]
+  [INFO][2017-11-14 23:38:51,307][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 23:38:51,307][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 23:38:51,362][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_menu
+  [INFO][2017-11-14 23:38:51,362][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [parent_id, id, text, url]
+  [INFO][2017-11-14 23:38:51,362][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 23:38:51,363][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 23:38:51,380][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_stock
+  [INFO][2017-11-14 23:38:51,380][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [amount, name, id]
+  [INFO][2017-11-14 23:38:51,380][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 23:38:51,381][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 23:38:51,382][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+  [INFO][2017-11-14 23:38:51,498][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2017-11-14 23:38:48",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:269675399, ConnectTime:"2017-11-14 23:38:49", UseCount:2, LastActiveTime:"2017-11-14 23:38:51"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+  [INFO][2017-11-14 23:38:51,614][com.rdyang.springmvc.base.SpringContextHolder]setApplicationContext and init xmlUrl
+  [INFO][2017-11-14 23:38:51,624][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4841 ms
+  [INFO][2017-11-14 23:38:51,694][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springMVC': initialization started
+  [INFO][2017-11-14 23:38:51,700][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 23:38:51 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 23:38:51,701][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc.xml]
+  [INFO][2017-11-14 23:38:52,050][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [INFO][2017-11-14 23:38:52,606][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/queryData],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.rdyang.hibernate.util.Pagination<?> com.rdyang.mall.manager.controller.DataController.queryData(java.lang.String)
+  [INFO][2017-11-14 23:38:52,608][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/goods/showGoods],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.GoodsController.show(com.rdyang.mall.manager.entity.Goods)
+  [INFO][2017-11-14 23:38:52,609][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/stock/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:38:52,610][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/menu/showMenu],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:38:52,611][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/stock/showStock],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:38:53,543][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 23:38:51 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 23:38:53,641][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 23:38:51 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 23:38:53,839][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+  [INFO][2017-11-14 23:38:53,844][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+  [INFO][2017-11-14 23:38:53,847][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+  [INFO][2017-11-14 23:38:53,856][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/jsp/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+  [INFO][2017-11-14 23:38:53,889][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springMVC': initialization completed in 2194 ms
+  [INFO][2017-11-14 23:39:03,017][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:39:03,018][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:39:04,800][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:39:04,800][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:39:04,801][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [WARN][2017-11-14 23:39:05,243][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 59.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+  [INFO][2017-11-14 23:39:07,082][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:39:07,083][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:39:07,083][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:39:07,093][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:39:07,093][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:39:07,153][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@1eb3a998, com.rdyang.mall.manager.entity.Stock@56f93ad9, com.rdyang.mall.manager.entity.Stock@5505b6f7, com.rdyang.mall.manager.entity.Stock@494d48ec, com.rdyang.mall.manager.entity.Stock@7e276fa8]]
+  [INFO][2017-11-14 23:39:13,071][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:39:13,072][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:39:13,072][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:39:13,073][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = 1
+  [INFO][2017-11-14 23:39:13,076][com.rdyang.springmvc.base.BaseController]{name=华为}
+  [INFO][2017-11-14 23:39:13,076][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={name=华为} pageIndex=1 pageSize=5
+  [WARN][2017-11-14 23:39:13,084][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 69.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+  [INFO][2017-11-14 23:39:13,136][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=1, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@7abe2ff]]
+  [INFO][2017-11-14 23:39:50,456][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:39:50,456][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:39:50,456][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:39:50,457][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:39:50,457][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=2 pageSize=5
+  [INFO][2017-11-14 23:39:50,465][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=5, pageSize=5, pageIndex=2, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@6154430c, com.rdyang.mall.manager.entity.Stock@12cfde46, com.rdyang.mall.manager.entity.Stock@3c241179, com.rdyang.mall.manager.entity.Stock@395f94d6, com.rdyang.mall.manager.entity.Stock@7a50ecd2]]
+  [INFO][2017-11-14 23:39:52,114][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:39:52,114][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:39:52,114][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:39:52,115][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:39:52,116][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:39:52,125][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@66bd41cf, com.rdyang.mall.manager.entity.Stock@e7f301c, com.rdyang.mall.manager.entity.Stock@abf2bee, com.rdyang.mall.manager.entity.Stock@71867e6f, com.rdyang.mall.manager.entity.Stock@a31cad2]]
+  [INFO][2017-11-14 23:39:57,575][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:39:57,576][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:39:57,576][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:39:57,576][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = 1
+  [INFO][2017-11-14 23:39:57,577][com.rdyang.springmvc.base.BaseController]{name=联想}
+  [INFO][2017-11-14 23:39:57,577][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={name=联想} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:39:57,586][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=1, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@4d750eed]]
+  [INFO][2017-11-14 23:41:14,472][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+  [INFO][2017-11-14 23:41:14,702][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Nov 14 23:41:14 CST 2017]; root of context hierarchy
+  [INFO][2017-11-14 23:41:14,774][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-service.xml]
+  [INFO][2017-11-14 23:41:15,130][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-trans.xml]
+  [INFO][2017-11-14 23:41:15,265][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+  [INFO][2017-11-14 23:41:15,571][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+  [INFO][2017-11-14 23:41:15,588][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [ERROR][2017-11-14 23:41:15,897][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+  [INFO][2017-11-14 23:41:16,008][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+  [INFO][2017-11-14 23:41:16,628][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+  [INFO][2017-11-14 23:41:16,641][org.hibernate.Version]HHH000412: Hibernate Core {4.3.5.Final}
+  [INFO][2017-11-14 23:41:16,647][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+  [INFO][2017-11-14 23:41:16,650][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+  [INFO][2017-11-14 23:41:16,687][org.hibernate.cfg.Configuration]HHH000044: Configuring from URL: file:/E:/mall/mall-manager/target/classes/hibernate/hibernate.cfg.xml
+  [INFO][2017-11-14 23:41:16,784][org.hibernate.cfg.Configuration]HHH000041: Configured SessionFactory: null
+  [WARN][2017-11-14 23:41:16,795][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [WARN][2017-11-14 23:41:16,837][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [WARN][2017-11-14 23:41:16,871][org.hibernate.internal.util.xml.DTDEntityResolver]HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+  [INFO][2017-11-14 23:41:17,667][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  [INFO][2017-11-14 23:41:17,847][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+  [INFO][2017-11-14 23:41:17,856][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+  [INFO][2017-11-14 23:41:18,858][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+  [INFO][2017-11-14 23:41:18,859][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+  [INFO][2017-11-14 23:41:18,871][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+  [INFO][2017-11-14 23:41:18,936][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_goods
+  [INFO][2017-11-14 23:41:18,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [price, name, id]
+  [INFO][2017-11-14 23:41:18,938][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 23:41:18,939][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 23:41:19,055][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_menu
+  [INFO][2017-11-14 23:41:19,055][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [parent_id, id, text, url]
+  [INFO][2017-11-14 23:41:19,055][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 23:41:19,055][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 23:41:19,077][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mall.mall_manager_stock
+  [INFO][2017-11-14 23:41:19,077][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [amount, name, id]
+  [INFO][2017-11-14 23:41:19,077][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+  [INFO][2017-11-14 23:41:19,077][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+  [INFO][2017-11-14 23:41:19,079][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+  [INFO][2017-11-14 23:41:19,194][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2017-11-14 23:41:15",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:11699533, ConnectTime:"2017-11-14 23:41:17", UseCount:2, LastActiveTime:"2017-11-14 23:41:19"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+  [INFO][2017-11-14 23:41:19,326][com.rdyang.springmvc.base.SpringContextHolder]setApplicationContext and init xmlUrl
+  [INFO][2017-11-14 23:41:19,336][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4862 ms
+  [INFO][2017-11-14 23:41:19,395][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springMVC': initialization started
+  [INFO][2017-11-14 23:41:19,407][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 23:41:19 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 23:41:19,408][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc.xml]
+  [INFO][2017-11-14 23:41:19,659][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [INFO][2017-11-14 23:41:19,960][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/queryData],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.rdyang.hibernate.util.Pagination<?> com.rdyang.mall.manager.controller.DataController.queryData(java.lang.String)
+  [INFO][2017-11-14 23:41:19,962][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/goods/showGoods],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.GoodsController.show(com.rdyang.mall.manager.entity.Goods)
+  [INFO][2017-11-14 23:41:19,963][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/stock/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:41:19,964][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/menu/showMenu],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:41:19,965][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/manager/stock/showStock],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:41:20,508][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 23:41:19 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 23:41:20,604][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 14 23:41:19 CST 2017]; parent: Root WebApplicationContext
+  [INFO][2017-11-14 23:41:20,779][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+  [INFO][2017-11-14 23:41:20,785][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+  [INFO][2017-11-14 23:41:20,788][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+  [INFO][2017-11-14 23:41:20,792][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/jsp/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+  [INFO][2017-11-14 23:41:20,825][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springMVC': initialization completed in 1423 ms
+  [INFO][2017-11-14 23:41:25,436][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:41:25,438][com.rdyang.springmvc.base.BaseInterceptor]public java.lang.String com.rdyang.mall.manager.controller.LoginController.Login()
+  [INFO][2017-11-14 23:41:27,165][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:41:27,165][com.rdyang.springmvc.base.BaseInterceptor]public java.util.List<com.rdyang.mall.manager.entity.Menu> com.rdyang.mall.manager.controller.MenuController.initNavi(java.lang.Integer)
+  [INFO][2017-11-14 23:41:27,165][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [WARN][2017-11-14 23:41:27,557][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 59.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+  [INFO][2017-11-14 23:41:29,064][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:41:29,064][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:41:29,064][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:41:29,074][com.rdyang.springmvc.base.BaseController]{}
+  [INFO][2017-11-14 23:41:29,075][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={} pageIndex=1 pageSize=5
+  [INFO][2017-11-14 23:41:29,103][com.rdyang.springmvc.base.BaseController]Pagination [rowsCount=60, curCount=5, pageSize=5, pageIndex=1, pageCount=12, items=[com.rdyang.mall.manager.entity.Stock@52da0408, com.rdyang.mall.manager.entity.Stock@4ca6a8df, com.rdyang.mall.manager.entity.Stock@4ede1f07, com.rdyang.mall.manager.entity.Stock@1ea6b236, com.rdyang.mall.manager.entity.Stock@2f8a1251]]
+  [INFO][2017-11-14 23:41:34,506][com.rdyang.springmvc.base.BaseInterceptor]baseInterceptor....
+  [INFO][2017-11-14 23:41:34,506][com.rdyang.springmvc.base.BaseInterceptor]public org.springframework.web.servlet.ModelAndView com.rdyang.mall.manager.controller.StockController.show(com.rdyang.mall.manager.entity.Stock)
+  [INFO][2017-11-14 23:41:34,506][com.rdyang.springmvc.base.BaseInterceptor]match show URI success.
+  [INFO][2017-11-14 23:41:34,507][com.rdyang.springmvc.base.BaseInterceptor]pageIndex = 1
+  [INFO][2017-11-14 23:41:34,510][com.rdyang.springmvc.base.BaseController]{name=华为}
+  [INFO][2017-11-14 23:41:34,511][com.rdyang.mall.manager.service.impl.StockServiceImpl]service: params={name=华为} pageIndex=1 pageSize=5
+  [ERROR][2017-11-14 23:41:34,515][org.hibernate.hql.internal.ast.ErrorCounter]line 1:69: unexpected token: %
+  [ERROR][2017-11-14 23:41:34,517][org.hibernate.hql.internal.ast.ErrorCounter]line 1:69: unexpected token: %
+  line 1:69: unexpected token: %
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3383)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3248)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2954)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:590)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2888)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2582)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2546)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2472)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2427)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2137)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1913)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:474)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:729)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:316)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:179)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:126)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:88)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:190)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1800)
+	at com.rdyang.hibernate.dao.impl.BaseDaoImpl.find(BaseDaoImpl.java:110)
+	at com.rdyang.hibernate.dao.impl.BaseDaoImpl.findPagination(BaseDaoImpl.java:85)
+	at com.rdyang.mall.manager.service.impl.StockServiceImpl.findStock(StockServiceImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:267)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy35.findStock(Unknown Source)
+	at com.rdyang.mall.manager.controller.StockController.show(StockController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[ERROR][2017-11-14 23:41:34,528][org.hibernate.hql.internal.ast.ErrorCounter]line 1:73: unexpected token: null
+  [ERROR][2017-11-14 23:41:34,528][org.hibernate.hql.internal.ast.ErrorCounter]line 1:73: unexpected token: null
+  line 1:73: unexpected token: null
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3383)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3286)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2954)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:590)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2888)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2582)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2546)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2472)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2427)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2137)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1913)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:474)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:729)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:316)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:179)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:126)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:88)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:190)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1800)
+	at com.rdyang.hibernate.dao.impl.BaseDaoImpl.find(BaseDaoImpl.java:110)
+	at com.rdyang.hibernate.dao.impl.BaseDaoImpl.findPagination(BaseDaoImpl.java:85)
+	at com.rdyang.mall.manager.service.impl.StockServiceImpl.findStock(StockServiceImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:267)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy35.findStock(Unknown Source)
+	at com.rdyang.mall.manager.controller.StockController.show(StockController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[WARN][2017-11-14 23:41:34,549][org.springframework.web.servlet.PageNotFound]Request method 'POST' not supported
+  
